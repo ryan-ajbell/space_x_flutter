@@ -1,6 +1,6 @@
 # SpaceX Explorer 🚀
 
-<img src="assets/readme/spacex_banner.svg" alt="SpaceX Explorer Banner" width="100%" />
+<img src="https://thumbs.dreamstime.com/b/illustration-deep-space-spacex-logo-over-vector-planet-195641418.jpg" alt="SpaceX Explorer Banner" width="100%" />
 
 A polished Flutter application that lets you explore SpaceX rockets and launches using a clean, testable architecture (Clean Architecture + Feature-first structure) with BLoC/Cubit state management. Designed as an educational yet production-minded reference for layering, dependency inversion, and UI composition.
 
