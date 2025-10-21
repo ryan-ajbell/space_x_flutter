@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#000814" />
+    </linearGradient>
+    <linearGradient id="rocketBody" x1="0" y1="0" x2="0" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e0e0e0" />
+      <stop offset="100%" stop-color="#bdbdbd" />
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff59d" />
+      <stop offset="50%" stop-color="#ff9800" />
+      <stop offset="100%" stop-color="#e65100" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="960" height="320" fill="url(#g1)" />
+  <!-- Starfield -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="120" cy="40" r="1" />
+    <circle cx="220" cy="90" r="1.4" />
+    <circle cx="340" cy="30" r="1" />
+    <circle cx="540" cy="70" r="1.2" />
+    <circle cx="640" cy="50" r="1" />
+    <circle cx="760" cy="40" r="1.6" />
+    <circle cx="880" cy="110" r="1" />
+    <circle cx="60" cy="140" r="1.2" />
+    <circle cx="190" cy="170" r="1" />
+    <circle cx="310" cy="150" r="1.4" />
+    <circle cx="430" cy="180" r="1" />
+    <circle cx="550" cy="140" r="1.2" />
+    <circle cx="670" cy="160" r="1" />
+    <circle cx="790" cy="190" r="1.4" />
+    <circle cx="910" cy="150" r="1" />
+    <circle cx="140" cy="250" r="1.2" />
+    <circle cx="260" cy="230" r="1" />
+    <circle cx="380" cy="260" r="1.4" />
+    <circle cx="500" cy="250" r="1" />
+    <circle cx="620" cy="240" r="1.2" />
+    <circle cx="740" cy="255" r="1" />
+    <circle cx="860" cy="235" r="1.4" />
+  </g>
+  <!-- Rocket Group -->
+  <g transform="translate(480 70)">
+    <rect x="-18" y="0" width="36" height="160" rx="6" fill="url(#rocketBody)" stroke="#ffffff" stroke-width="1.2" />
+    <rect x="-14" y="10" width="28" height="80" fill="#1e293b" opacity="0.35" />
+    <polygon points="-18,0 0,-32 18,0" fill="#eceff1" stroke="#ffffff" stroke-width="1" />
+    <circle cx="0" cy="60" r="10" fill="#0d47a1" stroke="#64b5f6" stroke-width="2" />
+    <!-- Side fins -->
+    <polygon points="-18,120 -34,150 -18,150" fill="#90a4ae" />
+    <polygon points="18,120 34,150 18,150" fill="#90a4ae" />
+    <!-- Flame -->
+    <path d="M -10 160 C -20 180 -6 200 -2 220 C -1 230 -4 240 0 250 C 4 240 1 230 2 220 C 6 200 20 180 10 160 Z" fill="url(#flame)" filter="url(#glow)" />
+  </g>
+  <!-- Title Text -->
+  <text x="50" y="200" font-size="56" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" fill="#e0e0e0" letter-spacing="2">SpaceX Explorer</text>
+  <text x="50" y="240" font-size="22" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="#b0bec5">Flutter • Clean Architecture • BLoC • REST API</text>
+  <text x="50" y="270" font-size="14" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fill="#78909c">Educational client app showcasing structured state management & data flow.</text>
+</svg>
+
